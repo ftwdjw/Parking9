@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <MapKit/MapKit.h>
 
 @interface FirstViewController : UIViewController
+- (IBAction)showInfo:(id)sender;
+
+- (IBAction)switchChanged:(id)sender;
+
+@property (weak, nonatomic) IBOutlet MKMapView *map;
 
 @end
